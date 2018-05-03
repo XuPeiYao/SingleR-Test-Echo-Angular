@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit() {
-    this.hubConnection = new signalr.HubConnection('/echo');
+    this.hubConnection = new signalr.HubConnection('/signalr/echo');
 
     this.hubConnection
       .start()
